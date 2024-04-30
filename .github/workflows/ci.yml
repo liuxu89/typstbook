@@ -21,7 +21,7 @@ jobs:
           url="https://github.com/Myriad-Dreamin/typst-book/releases/download/${tag}/typst-book-x86_64-unknown-linux-gnu.tar.gz"
           mkdir typst-book
           curl -sSL $url | tar -xz --directory=./typst-book
-          echo `pwd`/typst-book/bin >> $GITHUB_PATH
+          echo `pwd`/typst-book/typst-book-x86_64-unknown-linux-gnu/bin >> $GITHUB_PATH
       - name: Build Book
         run: |
           # This assumes your book is in the root of your repository.
