@@ -92,7 +92,7 @@
   set page(
     margin: (
       // reserved beautiful top margin
-      top: 20pt,
+      top: 34pt,
       // reserved for our heading style.
       // If you apply a different heading style, you may remove it.
       left: 20pt,
@@ -107,7 +107,7 @@
   // set text style
   set text(
     font: main-font,
-    size: 16pt,
+    size: 20pt,
     fill: main-color,
     lang: "en",
   )
@@ -118,6 +118,12 @@
     it
   })
   let get-ld(loc, k) = make-unique-label(k, disambiguator: ld.at(loc).at(k))
+
+  let indent = h(2em)
+
+  // 假段落，附着于 heading 之后可以实现首行缩进
+  let empty-par = par[#box()]
+  let fake-par = context empty-par + v(-measure(empty-par + empty-par).height)
   
   // render a dash to hint headings instead of bolding it.
   show heading: set text(weight: "regular") if is-web-target
@@ -146,6 +152,7 @@
         }
       }
       it
+      fake-par
     })
   }
   
@@ -177,7 +184,7 @@
   }
   
   // Main body.
-  set par(justify: true)
+  set par(justify: true, first-line-indent: 2em)
   
   body
 }

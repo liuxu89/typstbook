@@ -7,6 +7,8 @@
   title: "typst-book",
   summary: [
     #prefix-chapter("sample-page.typ")[Hello, typst]
+    = tmp
+    - #chapter("tmp/1.typ")[test page]
   ]
 )
 
