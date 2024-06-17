@@ -21,6 +21,7 @@
 // Fonts
 #let main-font = (
   "Charter",
+  "Microsoft YaHei",
   "Source Han Serif SC",
   "Source Han Serif TC",
   // shiroa's embedded font
