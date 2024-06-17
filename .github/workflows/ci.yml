@@ -18,15 +18,15 @@ jobs:
       - name: Install latest typst-book
         run: |
           tag=$(curl 'https://api.github.com/repos/Myriad-Dreamin/shiroa/releases/latest' | jq -r '.tag_name')
-          url="https://github.com/Myriad-Dreamin/typst-book/releases/download/${tag}/typst-book-x86_64-unknown-linux-gnu.tar.gz"
+          url="https://github.com/Myriad-Dreamin/shiroa/releases/download/${tag}/typst-book-x86_64-unknown-linux-gnu.tar.gz"
           mkdir shiroa
           curl -sSL $url | tar -xz --directory=./shiroa
-          echo `pwd`/typst-book/shiroa-x86_64-unknown-linux-gnu/bin >> $GITHUB_PATH
+          echo `pwd`/shiroa/shiroa-x86_64-unknown-linux-gnu/bin >> $GITHUB_PATH
       - name: Build Book
         run: |
           # This assumes your book is in the root of your repository.
           # Just add a `cd` here if you need to change to another directory.
-          typst-book build --path-to-root /typstbook/
+          shiroa build --path-to-root /typstbook/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
