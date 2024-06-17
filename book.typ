@@ -8,6 +8,7 @@
     #prefix-chapter("sample-page.typ")[Hello, typst]
     = tmp
     - #chapter("tmp/1.typ")[test page]
+    - #chapter("tmp/2.typ")[test page 2]
   ]
 )
 
