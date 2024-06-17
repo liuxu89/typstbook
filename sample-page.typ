@@ -14,3 +14,5 @@ Sample page
 
 = xx
 #lorem(100)
+
+汉字
