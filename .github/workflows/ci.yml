@@ -18,7 +18,7 @@ jobs:
       - name: Install latest typst-book
         run: |
           tag=$(curl 'https://api.github.com/repos/Myriad-Dreamin/shiroa/releases/latest' | jq -r '.tag_name')
-          url="https://github.com/Myriad-Dreamin/shiroa/releases/download/${tag}/typst-book-x86_64-unknown-linux-gnu.tar.gz"
+          url="https://github.com/Myriad-Dreamin/shiroa/releases/download/${tag}/shiroa-x86_64-unknown-linux-gnu.tar.gz"
           mkdir shiroa
           curl -sSL $url | tar -xz --directory=./shiroa
           echo `pwd`/shiroa/shiroa-x86_64-unknown-linux-gnu/bin >> $GITHUB_PATH
