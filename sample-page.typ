@@ -6,13 +6,4 @@
 
 Sample page
 
-#lorem(100)
-
-#lorem(100)
-
-#lorem(100)
-
-= xx
-#lorem(100)
-
 汉字
