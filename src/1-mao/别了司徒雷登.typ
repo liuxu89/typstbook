@@ -1,3 +1,7 @@
+#import "/book.typ": book-page
+
+#show: book-page.with(title: "Hello, typst")
+
 = 别了，司徒雷登
 
 （一九四九年八月十八日）
