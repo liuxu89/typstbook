@@ -93,8 +93,8 @@
     indent: list-indent * 0.618,
     body-indent: list-indent,
   )
-  set par(leading: 0.7em)
-  set block(spacing: 0.7em * 1.5)
+  set par(leading: 1.25em)
+  set block(spacing: 1.25em * 1.25)
 
   // Set text, spacing for headings
   // Render a dash to hint headings instead of bolding it as well if it's for web.
@@ -143,7 +143,7 @@
   }
 
   // Main body.
-  set par(justify: true, first-line-indent: 2em, leading: 5em)
+  set par(justify: true, first-line-indent: 2em)
 
   body
 }
