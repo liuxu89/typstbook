@@ -4,7 +4,7 @@
 #show: book
 
 #book-meta(
-  title: "shiroa",
+  title: "Liuxu's wiki",
   summary: [
     #prefix-chapter("sample-page.typ")[Hello, typst]
     = 毛泽东选集

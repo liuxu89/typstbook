@@ -45,7 +45,7 @@
 /// The project function defines how your document looks.
 /// It takes your content and some metadata and formats it.
 /// Go ahead and customize it to your liking!
-#let project(title: "Typst Book", authors: (), kind: "page", body) = {
+#let project(title: "Liuxu's wiki", authors: (), kind: "page", body) = {
 
   // set basic document metadata
   set document(
@@ -93,8 +93,8 @@
     indent: list-indent * 0.618,
     body-indent: list-indent,
   )
-  set par(leading: 1.25em)
-  set block(spacing: 1.25em * 1.25)
+  set par(leading: 1.2em)
+  set block(spacing: 1.6em)
 
   // Set text, spacing for headings
   // Render a dash to hint headings instead of bolding it as well if it's for web.
